@@ -539,6 +539,14 @@
     height: 52px;
     font-size: 15px;
   }
+  .select-container .field__holder{
+    font-size: 15px!important;
+  }
+  .select-container.selected .field__holder, .select-container.active .field__holder{
+    transform: none!important;
+    font-size: 12px!important;
+    right: 16px !important;
+  }
   .checkout__products {
     margin-top: 58px;
   }
