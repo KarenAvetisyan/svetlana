@@ -271,6 +271,8 @@
   border: none;
   outline: none;
   text-align: right;
+  background: none;
+  min-width: 150px;
 }
 .sc-itemcard .item__total-foot .add__cart {
   font-weight: 500;
@@ -602,6 +604,9 @@
     font-size: 24px;
     line-height: 28px;
   }
+  .sc-itemcard .item__total-foot #price{
+    min-width: 128px;
+  }
   .sc-itemcard .item__total-foot .add__cart {
     margin-left: 24px;
     font-size: 18px;
@@ -622,6 +627,9 @@
     padding-left: 0;
     justify-content: space-between;
     width: 100%;
+  }
+  .sc-itemcard .item__total-foot #price {
+    min-width: 75px;
   }
   .frames__preview-box .frames__preview-box-wrap {
     width: calc(100% + 30px);
