@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font/icomoon.eot?bjfe34');
+    src:  url('../font/icomoon.eot?bjfe34#iefix') format('embedded-opentype'),
+      url('../font/icomoon.ttf?bjfe34') format('truetype'),
+      url('../font/icomoon.woff?bjfe34') format('woff'),
+      url('../font/icomoon.svg?bjfe34#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-whatsapp{font-size: 24px;}
+  .icon-whatsapp:before {
+    content: "\e900";
+    color: #413B2E;
+    font-size: 24px;
+  }
+  .icon-youtube{font-size: 17px;}
+  .icon-youtube:before {
+    content: "\e901";
+    color: #413B2E;
+    font-size: 17px;
+  }
+  .icon-instagram{font-size: 21px;}
+  .icon-instagram:before {
+    content: "\e902";
+    color: #413B2E;
+    font-size: 21px;
+  }
+  .icon-twitter{font-size: 21px;}
+  .icon-twitter:before {
+    content: "\e903";
+    color: #413B2E;
+    font-size: 21px;
+  }
+  .icon-cart{font-size: 20px;}
+  .icon-cart:before {
+    content: "\e904";
+    color: #413B2E;
+    font-size: 20px;
+  }
+  .icon-arrow:before {
+    content: "\e905";
+    color: #413B2E;
+  }
+  .icon-share{font-size: 13px;}
+  .icon-share:before {
+    content: "\e906";
+    color: #413B2E;
+    font-size: 13px;
+  }
+  .icon-telegram{font-size: 21px;}
+  .icon-telegram:before {
+    content: "\e909";
+    color: #413B2E;
+    font-size: 21px;
+  }
+  .icon-viber{font-size: 24px;}
+  .icon-viber:before {
+    content: "\e90a";
+    color: #413B2E;
+    font-size: 24px;
+  }
+  .icon-close:before {
+    content: "\e907";
+    color: #413B2E;
+  }
+  @media (max-width: 991px)  {
+    .icon-twitter, .icon-twitter:before{font-size: 18px;}
+    .icon-instagram, .icon-instagram:before{font-size: 16px;}
+    .icon-youtube, .icon-youtube:before{font-size: 13px;}
+    .icon-whatsapp, .icon-whatsapp:before{font-size: 18px;}
+    .icon-cart, .icon-cart:before{font-size: 15px;}
+    .icon-viber, .icon-viber:before{font-size: 19px;}
+    .icon-telegram, .icon-telegram:before{font-size: 16px;}
+  }

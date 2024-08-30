@@ -1,0 +1,163 @@
+.sc-artworks {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.artwork--box {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 120px;
+}
+.artwork--box .icon::before {
+  transition: 0.3s;
+}
+.artwork--box .artwork__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.artwork--box .artwork__img {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  padding-top: 31%;
+  min-height: 520px;
+}
+.artwork--box .artwork__img:before {
+  background-color: #FFFEFC;
+  background-image: url(../../img/bd-bg.png);
+}
+.artwork--box .artwork__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.artwork--box .artwork__description {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.artwork--box .artwork__description.watched .description, .artwork--box .artwork__description.watched .share__info {
+  transform: none;
+}
+.artwork--box .artwork__description .description, .artwork--box .artwork__description .share__info {
+  transform: translateY(100%);
+  transition: 1s;
+}
+.artwork--box .artwork__description .description {
+  max-width: 80%;
+}
+.artwork--box .artwork__description p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.artwork--box .artwork__description strong {
+  font-weight: 500;
+}
+.artwork--box .share__info {
+  display: flex;
+}
+.artwork--box .share__info.active .share__links a {
+  transform: none;
+  opacity: 1;
+}
+.artwork--box .share__links {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.artwork--box .share__links a {
+  margin-left: 20px;
+  transform: translateY(100%) scale(0.3);
+  opacity: 0;
+  transition: 0.3s;
+}
+.artwork--box .share__links a:nth-of-type(6) {
+  transition-delay: 0s;
+}
+.artwork--box .share__links a:nth-of-type(5) {
+  transition-delay: 0.1s;
+}
+.artwork--box .share__links a:nth-of-type(4) {
+  transition-delay: 0.13s;
+}
+.artwork--box .share__links a:nth-of-type(3) {
+  transition-delay: 0.16s;
+}
+.artwork--box .share__links a:nth-of-type(2) {
+  transition-delay: 0.19s;
+}
+.artwork--box .share__links a:nth-of-type(1) {
+  transition-delay: 0.22s;
+}
+.artwork--box .share__links a:hover .icon:before {
+  color: var(--yellow);
+}
+.artwork--box .share__links a:focus .icon:before {
+  color: #E0AD47;
+}
+.artwork--box .share {
+  flex-shrink: 0;
+}
+.artwork--box .share > * {
+  pointer-events: none;
+}
+.artwork--box .share:hover .icon:before {
+  color: var(--yellow);
+}
+.artwork--box .share:focus .icon:before {
+  color: #E0AD47;
+}
+
+@media (max-width: 767px) {
+  .sc-artworks {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  .sc-artworks .artwork--box .artwork__img {
+    padding-top: 120%;
+  }
+  .artwork--box {
+    margin-bottom: 60px;
+  }
+  .artwork--box .artwork__img {
+    min-height: auto;
+    padding-top: 46%;
+  }
+  .artwork--box .artwork__description {
+    align-items: center;
+  }
+  .artwork--box .artwork__description .description {
+    max-width: calc(100% - 154px);
+  }
+  .artwork--box .share__links {
+    margin-right: 15px;
+  }
+  .artwork--box .share__links a {
+    margin-left: 12px;
+  }
+  .artwork--box .artwork__info {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+}

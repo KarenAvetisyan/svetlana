@@ -1,0 +1,301 @@
+.sc-gallery {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.sc-gallery .artwork__img {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: 824px;
+}
+.sc-gallery .artwork__img:before {
+  background-color: #FFFEFC;
+  background-image: url(../../img/bd-bg.png);
+}
+.sc-gallery .artwork__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.sc-gallery .artwork__description {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.sc-gallery .artwork__description.watched .description {
+  transform: none;
+}
+.sc-gallery .artwork__description .description {
+  transform: translateY(100%);
+  transition: 1s;
+}
+.sc-gallery .artwork__description p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.sc-gallery .artwork__description strong {
+  font-weight: 500;
+}
+.sc-gallery .artwork__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+.sc-gallery .artwork__info a {
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: 0.3s;
+}
+.sc-gallery .artwork__info a:hover {
+  color: var(--yellow);
+}
+
+.gallery--box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery--box .icon-arrow {
+  margin-left: 10px;
+  font-size: 10px;
+  transition: 0.3s;
+}
+.gallery--box .icon-arrow:before {
+  font-size: 10px;
+  transition: 0.3s;
+}
+.gallery--box .gallery__details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: 100%;
+  width: 100%;
+  max-width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery--box .gallery__details a {
+  color: var(--dark);
+  transition: 0.3s;
+}
+.gallery--box .gallery__details a:hover {
+  color: var(--yellow);
+}
+.gallery--box .gallery__details a:hover .icon:before {
+  color: var(--yellow);
+}
+.gallery--box .gallery__details a:focus {
+  color: #E0AD47;
+}
+.gallery--box .gallery__details a:focus .icon:before {
+  color: #E0AD47;
+}
+.gallery--box .gallery__details .gallery__detail-top {
+  align-self: flex-start;
+  width: 100%;
+}
+.gallery--box .gallery__details .gallery__detail-bottom {
+  align-self: flex-end;
+  width: 100%;
+  text-align: right;
+}
+.gallery--box .gallery__details h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.gallery--box .gallery__details .place {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.gallery--box .gallery__details .sizes {
+  margin-top: 52px;
+  margin-bottom: 52px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+}
+.gallery--box .gallery__details .sizes li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.gallery--box .gallery__details .sizes li:last-of-type {
+  margin-bottom: 0;
+}
+.gallery--box .gallery__details .sizes .cost {
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: 40px;
+}
+.gallery--box .gallery__details .order {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery--box .gallery__details .limited {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.gallery--box .sold-out {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 52px;
+}
+.gallery--box .detail__link {
+  color: var(--dark);
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery--box .parallaxSwiper {
+  max-width: 780px;
+  padding-bottom: 35px;
+}
+.gallery--box .parallaxSwiper:before {
+  background-color: #FFFEFC;
+  background-image: url(../../img/bd-bg.png);
+}
+.gallery--box .slide__item-bg {
+  width: 100%;
+  position: relative;
+}
+.gallery--box .slide__item-bg img {
+  width: 100%;
+}
+.gallery--box .gal__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  z-index: 1;
+}
+
+.footer h4 {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 991px) {
+  .gallery--box:nth-of-type(odd) .parallaxSwiper {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .gallery--box:nth-of-type(odd) .detail__link {
+    justify-content: flex-end;
+  }
+  .gallery--box:nth-of-type(even) .detail__col {
+    order: 2;
+  }
+  .gallery--box:nth-of-type(even) .slider__col {
+    order: 1;
+  }
+  .gallery--box:nth-of-type(even) .parallaxSwiper {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .gallery--box:nth-of-type(even) .gallery__details {
+    margin-left: auto;
+  }
+}
+@media (max-width: 1920px) {
+  .sc-gallery .artwork__img {
+    height: 77vh;
+    min-height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery--box .gallery__details {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .sc-gallery {
+    padding-bottom: 10px;
+  }
+  .sc-gallery .artwork__info {
+    margin-bottom: 0;
+  }
+  .gallery--box .gallery__details {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .sc-gallery {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  .sc-gallery .artwork__img {
+    height: auto;
+    padding-top: 120%;
+  }
+  .sc-gallery .artwork__info {
+    margin-top: 80px;
+  }
+  .gallery--box .gallery__details h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .gallery--box .gallery__details .place {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .gallery--box .gallery__details .sizes {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .gallery--box .gallery__details .sizes li {
+    margin-bottom: 14px;
+  }
+  .gallery--box .gallery__details .sizes a {
+    font-size: 18px;
+  }
+  .gallery--box .gallery__details .limited {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+  .gallery--box .sold-out {
+    margin-top: 14px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}

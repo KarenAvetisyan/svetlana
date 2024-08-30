@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SVETLANA BABENCO | GALLERY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="seo goes here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
+    <link rel="preload" href="css/icons.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
+    <link rel="preload"  type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
+    <link rel="stylesheet" href="css/main.css"><!-- ВЕЗДЕ НУЖЕН -->
+    <link rel="stylesheet" href="css/pages/gallery.css"><!-- ТОЛЬКО для этой страницы -->
+    <link rel="preload" href="css/libs/glightbox.min.css" as="style" onload="this.rel='stylesheet'"><!-- ТОЛЬКО для этой страницы -->
+    <link fetchpriority="high" rel="preload" href="img/bg-3.webp" as="image"><!-- Оптимизация первой картинки --> 
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__wrap">
+                            <nav>
+                                <ul class="menu">
+                                    <li><a class="nav__link" href="/">Home</a></li>
+                                    <li><a class="nav__link" href="artworks.html">Artworks</a></li>
+                                    <li><a class="nav__link active" href="gallery.html">Gallery</a></li>
+                                    <li><a class="nav__link" href="contact.html">Contacts</a></li>
+                                </ul>
+                                <div class="swiper parallaxSwiper d-mx-lg">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-3.webp);"></div>
+                                                    <div class="slide__item-text">
+                                                        <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-1.webp);"></div>
+                                                    <div class="slide__item-text">
+                                                        <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-2.webp);"></div>
+                                                    <div class="slide__item-text">
+                                                        <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-4.webp);"></div>
+                                                    <div class="slide__item-text">
+                                                        <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-5.webp);"></div>
+                                                <div class="slide__item-text">
+                                                    <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide__item">
+                                                <div class="slide__item-bg" style="background-image: url(img/bg-6.webp);"></div>
+                                                <div class="slide__item-text">
+                                                    <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-box">
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                                <div class="langs d-mx-lg">
+                                    <ul>
+                                        <li class="selected">EN</li>
+                                        <li><a href="#">RU</a></li>
+                                        <li><a href="#">PT</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="logo"><a href="#">Svetlana<strong>Babenco</strong></a></div>
+                            <div class="head__wrap">
+                                <div class="socials">
+                                    <a href="#"><i class="icon icon-twitter"></i></a>
+                                    <a href="#"><i class="icon icon-instagram"></i></a>
+                                    <a href="#"><i class="icon icon-youtube"></i></a>
+                                    <a href="#"><i class="icon icon-whatsapp"></i></a>
+                                </div>
+                                <a href="cart.html" class="cart"><i class="icon icon-cart"></i> <span class="quantity">2</span></a>
+                                <div class="langs d-mn-lg">
+                                    <div class="lang__selected">EN</div>
+                                    <ul>
+                                        <li class="selected">EN</li>
+                                        <li><a href="#">RU</a></li>
+                                        <li><a href="#">PT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="burger js-burger d-mx-lg">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- gallery  -->
+        <section class="sc-gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 title text-center" data-inviewport="obs__title">
+                        <h1>gallery</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="artwork__img" data-inviewport="obs__full-width">
+                            <img width="100%" src="img/bg-3.webp" alt="море">
+                        </div>
+                        <div class="artwork__description" data-inviewport="">
+                            <div class="description">
+                                <p><strong>apreciando suas crenças</strong> / Lisboa, Portugal / 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="artwork__info text-center" data-inviewport="obs__slide-up">
+                            <p>All paintings are printed by hand on exquisite Hahnemuhle paper made of 100% cotton.<br>
+                                The paintings printed on this paper look very beautiful, but are fragile, so the standard form of delivery is canvas packed in a plastic tube.</p>
+                            <p>On request, the painting can be mounted in a glass frame, you can see&nbsp;examples&nbsp;<a href="frames-preview.html">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery boxes and details -->
+        <div class="gallery--box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 detail__col">
+                        <div class="gallery__details" data-inviewport="obs__slide-up">
+                            <div class="gallery__detail-top">
+                                <h4>apreciando suas crenças</h4>
+                                <p class="place">Lisboa, Portugal / 2023</p>
+                                <ul class="sizes">
+                                    <li><span class="size">120x80 cm</span> <span class="cost">170$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">90x60 cm</span> <span class="cost">140$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">60x40 cm</span> <span class="cost">100$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                </ul>
+                                <p class="limited">Limited Edition: 1000 pcs</p>
+                            </div>
+                            <div class="gallery__detail-bottom">
+                                <a class="detail__link" href="item-card.html">Details <i class="icon icon-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 slider__col">
+                        <div class="swiper parallaxSwiper autoplay-observer" data-inviewport="obs__full-width">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image22.webp" data-gallery="gal-1" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image22.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image23.webp" data-gallery="gal-1" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image23.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image21.webp" data-gallery="gal-1" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image21.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image24.webp" data-gallery="gal-1" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image24.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery--box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 detail__col">
+                        <div class="gallery__details" data-inviewport="obs__slide-up">
+                            <div class="gallery__detail-top">
+                                <h4>apreciando suas crenças</h4>
+                                <p class="place">Lisboa, Portugal / 2023</p>
+                                <p class="sold-out">SOLD OUT</p>
+                            </div>
+                            <div class="gallery__detail-bottom">
+                                <a class="detail__link" href="sold-out.html">Details <i class="icon icon-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 slider__col">
+                        <div class="swiper parallaxSwiper autoplay-observer" data-inviewport="obs__full-width">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                             <a href="img/Image32.webp" data-gallery="gal-2" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image32.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                             <a href="img/Image33.webp" data-gallery="gal-2" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image33.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                             <a href="img/Image31.webp" data-gallery="gal-2" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image31.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                             <a href="img/Image34.webp" data-gallery="gal-2" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image34.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery--box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 detail__col">
+                        <div class="gallery__details" data-inviewport="obs__slide-up">
+                            <div class="gallery__detail-top">
+                                <h4>apreciando suas crenças</h4>
+                                <p class="place">Lisboa, Portugal / 2023</p>
+                                <ul class="sizes">
+                                    <li><span class="size">120x80 cm</span> <span class="cost">170$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">90x60 cm</span> <span class="cost">140$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">60x40 cm</span> <span class="cost">100$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                </ul>
+                                <p class="limited">Limited Edition: 1000 pcs</p>
+                            </div>
+                            <div class="gallery__detail-bottom">
+                                <a class="detail__link" href="item-card.html">Details <i class="icon icon-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 slider__col">
+                        <div class="swiper parallaxSwiper autoplay-observer" data-inviewport="obs__full-width">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image 63.webp" data-gallery="gal-3" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image 63.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image 61.webp" data-gallery="gal-3" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image 61.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image 62.webp" data-gallery="gal-3" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image 62.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image 64.webp" data-gallery="gal-3" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image 64.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery--box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 detail__col">
+                        <div class="gallery__details" data-inviewport="obs__slide-up">
+                            <div class="gallery__detail-top">
+                                <h4>apreciando suas crenças</h4>
+                                <p class="place">Lisboa, Portugal / 2023</p>
+                                <ul class="sizes">
+                                    <li><span class="size">120x80 cm</span> <span class="cost">170$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">90x60 cm</span> <span class="cost">140$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                    <li><span class="size">60x40 cm</span> <span class="cost">100$</span> <a class="order" href="cart.html">TO ORDER <i class="icon icon-arrow"></i></a></li>
+                                </ul>
+                                <p class="limited">Limited Edition: 1000 pcs</p>
+                            </div>
+                            <div class="gallery__detail-bottom">
+                                <a class="detail__link" href="item-card.html">Details <i class="icon icon-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 slider__col">
+                        <div class="swiper parallaxSwiper autoplay-observer" data-inviewport="obs__full-width">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image11.webp" data-gallery="gal-4" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image11.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image13.webp" data-gallery="gal-4" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image13.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image12.webp" data-gallery="gal-4" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image12.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__item">
+                                        <div class="slide__item-bg">
+                                            <a href="img/Image14.webp" data-gallery="gal-4" class="glightbox gal__link"></a>
+                                            <img loading="lazy" src="img/Image14.webp" alt="artwork in the flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="mail.php" method="POST" class="mail--send-form subscribeForm" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="contact__box">
+                                        <h4>SUBSCRIBE</h4>
+                                        <p class="receive__notifications">to receive notification about new arts</p>
+                                    </div>
+                                </div>
+                                <div class="successfully-sent">
+                                    You are successfully subscribed!
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="submit__wrap">
+                                        <div class="field">
+                                            <input type="email" name="email" placeholder="e-Mail" required>
+                                        </div>
+                                        <div class="submit__box">
+                                            <input class="submit" type="submit" value="Submit">
+                                            <i class="icon icon-arrow"></i>
+                                        </div>
+                                        <div class="form-pending">
+                                            SUBMITTING...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Svetlana Babenco art-photographer Faro, Algarve, Portugal ©️ 2024</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="policy__socials">
+                            <a class="policy" href="#">privacy Policy</a>
+                            <div class="socials">
+                                <a href="#"><i class="icon icon-twitter"></i></a>
+                                <a href="#"><i class="icon icon-instagram"></i></a>
+                                <a href="#"><i class="icon icon-youtube"></i></a>
+                                <a href="#"><i class="icon icon-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- ВЕЗДЕ НУЖЕН -->
+    <script async src="js/libs/smooth.js"></script><!-- ТОЛЬКО -->
+    <script async src="js/libs/glightbox.min.js"></script><!-- ТОЛЬКО для этой страницы -->
+    <script src="js/form-send.js"></script><!-- НУЖЕН ТАМ ГДЕ ЕСТЬ ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <script src="js/script.js"></script><!-- ВЕЗДЕ НУЖЕН -->
+    <!-- ТОЛЬКО для этой стрнаицы -->
+     <script>
+         window.addEventListener('load', function(){
+             // glightbox 
+            var lightboxGallery = GLightbox({
+                    loop: true,
+                    selector: ".glightbox",
+                    openEffect: "zoom",
+                    closeEffect: "zoom",
+                    closeOnOutsideClick: true,
+                    zoomable: true,
+            });
+         })
+     </script>
+</body>
+</html>
+
