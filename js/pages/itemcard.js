@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const number = document.getElementById('number');
     
     // price initial value
-    const initialCost = Math.floor(select('.js-size-input:checked').getAttribute('data-size-cost'));
+    const initialCost = parseFloat(select('.js-size-input:checked').getAttribute('data-size-cost'));
     price.value = initialCost;
     // price input autowidth
     function resizeInput() {
@@ -54,57 +54,56 @@ document.addEventListener('DOMContentLoaded', function(){
     let sizeCheckedValue = initialCost ? initialCost : null;
     let frameCheckedValue = null;
     function calc(){
+        var crntValue = select('#crnt').options[select('#crnt').selectedIndex].getAttribute("data-value");
+        var crncy = select('#crnt').options[select('#crnt').selectedIndex].attributes[1].value;
+        const currency = document.getElementById('currency');
         var result = sizeCheckedValue + frameCheckedValue;
         price.value = result * number.value;
+        if(crncy == 'usd'){
+            currency.innerHTML = '$';
+            price.value = result * number.value;
+        }
+        if(crncy == 'rub'){
+            currency.innerHTML = '₽';
+            price.value = (price.value * parseFloat(crntValue)).toFixed(2);
+        }
+        if(crncy == 'eur'){
+            currency.innerHTML = '€';
+            price.value = (price.value / parseFloat(crntValue)).toFixed(2);
+        }
+        resizeInput();
     }
+    select('select').addEventListener('change', calc);
     // size cost to price 
     on('change', '.js-size-input', function(e){
-        var sizeVal = Math.floor(e.target.getAttribute('data-size-cost'));
+        var sizeVal = parseFloat(e.target.getAttribute('data-size-cost'));
         if(e.target.checked == true){
-            sizeCheckedValue = Math.floor(sizeVal);
+            sizeCheckedValue = parseFloat(sizeVal);
             calc();
             resizeInput();
         }
     }, true);
     // frame cost to price 
     on('change', '.js-frame-input', function(e){
-        var frameVal = Math.floor(e.target.getAttribute('data-frame-cost'));
+        var frameVal = parseFloat(e.target.getAttribute('data-frame-cost'));
         if(e.target.checked == true){
-            frameCheckedValue = Math.floor(frameVal);
+            frameCheckedValue = parseFloat(frameVal);
             calc();
             resizeInput();
         }
         else {
-            frameCheckedValue = Math.floor(frameVal - frameVal);
+            frameCheckedValue = parseFloat(frameVal - frameVal);
             calc();
             resizeInput();
         }
     }, true);
-    // currency $ ₽ €
-    // var currency = document.getElementById('currency');
-    // function convertCurrency(e) {
-    //     var crntValue = e.target.options[e.target.selectedIndex].getAttribute("data-value");
-    //     calc(); 
-    //     resizeInput();
-    //     if(e.target.value == 'usd'){
-    //         currency.innerHTML = '$';
-    //     }
-    //     if(e.target.value == 'rub'){
-    //         currency.innerHTML = '₽';
-    //         price.value = Math.floor(price.value * crntValue);
-    //     }
-    //     if(e.target.value == 'eur'){
-    //         currency.innerHTML = '€';
-    //         price.value = Math.floor(price.value / crntValue);
-    //     }
-    // }
-    // select('select').addEventListener('change', convertCurrency);
+   
     // increase and deacrease
     var initial = number.value;
     document.addEventListener('click', function(e){
         if(e.target.matches('.js-increase')){
             number.value++;
-            price.value = Math.floor(price.value) * Math.floor(number.value);
+            price.value = parseFloat(price.value) * parseFloat(number.value);
             calc();
             resizeInput();
         }
@@ -113,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 if(number.value == 0) {
                     number.value = initial;
                 }
-                price.value = Math.floor(price.value) - Math.floor(price.value);
+                price.value = parseFloat(price.value) - parseFloat(price.value);
                 calc()
                 resizeInput();
         }
