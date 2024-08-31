@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
     function resizeInput() {
         price.style.width = price.value.length + "ch";
     }resizeInput()
-    // size and frame cost to price
+    // size and frame cost to price with currency change
     let sizeCheckedValue = initialCost ? initialCost : null;
     let frameCheckedValue = null;
     function calc(){
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         if(crncy == 'rub'){
             currency.innerHTML = '₽';
-            price.value = (price.value * parseFloat(crntValue)).toFixed(2);
+            price.value = (price.value * parseFloat(crntValue)).toFixed(0);
         }
         if(crncy == 'eur'){
             currency.innerHTML = '€';
-            price.value = (price.value / parseFloat(crntValue)).toFixed(2);
+            price.value = (price.value / parseFloat(crntValue)).toFixed(0);
         }
         resizeInput();
     }
