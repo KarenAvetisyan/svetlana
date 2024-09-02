@@ -210,6 +210,11 @@
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 1300px) and (max-height: 950px) {
+  .gallery--box .parallaxSwiper .slide__item-bg{
+    max-height: 70vh;
+  }
+}
 @media (min-width: 991px) {
   .gallery--box:nth-of-type(odd) .parallaxSwiper {
     margin-left: auto;

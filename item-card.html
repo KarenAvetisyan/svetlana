@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
     <link rel="preload" href="css/icons.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
-    <link rel="preload"  type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
+    <link rel="preload" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
     <link rel="stylesheet" href="css/main.css"><!-- ВЕЗДЕ НУЖЕН -->
     <link rel="stylesheet" href="css/pages/itemCard.css"><!-- ТОЛЬКО для этой страницы -->
+    <link rel="stylesheet" href="css/pages/frames-preview.css"><!-- ТОЛЬКО для этой страницы -->
     <link rel="preload" href="css/libs/glightbox.min.css" as="style" onload="this.rel='stylesheet'"><!-- ТОЛЬКО для этой страницы -->
     <link fetchpriority="high" rel="preload" href="img/Image32.webp" as="image"><!-- Оптимизация первой картинки в слайдере --> 
 </head>
@@ -445,8 +446,25 @@
     <script src="js/pages/itemcard.js"></script><!-- ТОЛЬКО для этой страницы -->
     <!-- ТОЛЬКО для этой стрнаицы -->
      <script>
+        // frames preview modal 
+        document.addEventListener('click', function (e) {
+            if (!e.target.matches('[data-show-modal]')) return;
+            else{
+            e.preventDefault();
+            var modal = document.querySelectorAll('#'+e.target.dataset.id);
+            Array.prototype.forEach.call(modal, function (el) {
+                    el.classList.add('active');
+            });
+            }
+        });
+        document.addEventListener('click', function (e) {
+            if (!e.target.matches('[data-close-modal]')) return;
+            else{
+                e.target.closest('.modal').classList.remove('active');
+            }
+        });
+         // glightbox 
          window.addEventListener('load', function(){
-             // glightbox 
             var lightboxGallery = GLightbox({
                     loop: true,
                     selector: ".glightbox",

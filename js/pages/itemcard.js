@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const number = document.getElementById('number');
     
     // price initial value
-    const initialCost = parseFloat(select('.js-size-input:checked').getAttribute('data-size-cost')) * parseFloat(select("#number").value);
+    const initialCost = parseFloat(select('.js-size-input:checked').getAttribute('data-size-cost')) * parseFloat(number.value);
     price.value = initialCost;
     // price input autowidth
     function resizeInput() {
@@ -115,9 +115,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         resizeInput()
     })
-
-
-
     // frames preview modal 
     document.addEventListener('click', function (e) {
         if (!e.target.matches('[data-show-modal]')) return;
@@ -135,4 +132,6 @@ document.addEventListener('DOMContentLoaded', function(){
             e.target.closest('.modal').classList.remove('active');
         }
     });
+
+   
 });

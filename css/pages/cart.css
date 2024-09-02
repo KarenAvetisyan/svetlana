@@ -191,12 +191,12 @@
   line-height: 21px;
   margin-right: 20px;
 }
-.cart__total .total__head .price {
+.cart__total .total__head .price__box {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.cart__total .total__head .price p {
+.cart__total .total__head .price__box p {
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
@@ -212,7 +212,6 @@
   line-height: 22px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: solid 1px var(--dark);
   margin-bottom: 40px;
 }
 .cart__total .cart__list li {
@@ -221,10 +220,21 @@
   justify-content: space-between;
   padding: 20px 0;
 }
+.cart__total .cart__list li:last-of-type{
+  border-bottom: solid 1px var(--dark);
+}
 .cart__total .cart__list strong {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  margin-left: auto;
+}
+.cart__total .cart__list .qnt{
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF5050;
 }
 .cart__total .checkout__box {
   text-align: right;
@@ -364,7 +374,7 @@
   .cart__total .total__head .crnt {
     font-size: 14px;
   }
-  .cart__total .total__head .price p {
+  .cart__total .total__head .price__box p {
     font-size: 24px;
     line-height: 32px;
   }

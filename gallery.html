@@ -11,6 +11,7 @@
     <link rel="preload"  type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"><!-- ВЕЗДЕ НУЖЕН -->
     <link rel="stylesheet" href="css/main.css"><!-- ВЕЗДЕ НУЖЕН -->
     <link rel="stylesheet" href="css/pages/gallery.css"><!-- ТОЛЬКО для этой страницы -->
+    <link rel="stylesheet" href="css/pages/frames-preview.css"><!-- ТОЛЬКО для этой страницы -->
     <link rel="preload" href="css/libs/glightbox.min.css" as="style" onload="this.rel='stylesheet'"><!-- ТОЛЬКО для этой страницы -->
     <link fetchpriority="high" rel="preload" href="img/bg-3.webp" as="image"><!-- Оптимизация первой картинки --> 
 </head>
@@ -140,7 +141,7 @@
                         <div class="artwork__info text-center" data-inviewport="obs__slide-up">
                             <p>All paintings are printed by hand on exquisite Hahnemuhle paper made of 100% cotton.<br>
                                 The paintings printed on this paper look very beautiful, but are fragile, so the standard form of delivery is canvas packed in a plastic tube.</p>
-                            <p>On request, the painting can be mounted in a glass frame, you can see&nbsp;examples&nbsp;<a href="frames-preview.html">here</a>.</p>
+                            <p>On request, the painting can be mounted in a glass frame, you can see&nbsp;examples&nbsp;<a href="#" data-id="modal-frames-preview" data-show-modal="">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -465,25 +466,149 @@
         </div>
     </div>
 
+    <!-- frames preview  -->
+    <div class="modal" id="modal-frames-preview" style="visibility: hidden">
+        <div class="m-container">
+            <div class="container">
+                <div class="frames__preview-header">
+                    <div class="m-title-close d-mn-md" data-close-modal>Frames PReview</div><!-- m-title-close for desktop  -->
+                    <div class="logo"><a href="#">Svetlana<strong>Babenco</strong></a></div>
+                    <div class="head__wrap">
+                        <a href="cart.html" class="cart"><i class="icon icon-cart"></i> <span class="quantity">2</span></a>
+                        <div class="m-close" data-close-modal></div>
+                    </div>
+                </div>
+            </div>
+            <div class="frames__preview-box">
+                <div class="container">
+                    <div class="m-title-close d-mx-md" data-close-modal>Frames PReview</div><!-- m-title-close for mobile  -->
+                    <div class="frames__preview-box-wrap">
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-1.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-1.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-2.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-2.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-3.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-3.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-4.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-4.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-5.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-5.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="preview__item">
+                            <div class="img__box" data-inviewport="obs__full-width">
+                                <a href="img/frame-6.webp" data-gallery="frames" class="glightbox"></a>
+                                <img loading="lazy" src="img/frame-6.webp" alt="fine art brut">
+                            </div>
+                            <div class="preview__item-description" data-inviewport="obs__slide-up">
+                                <div class="preview__item-title">
+                                    <p>Fine Art <span>BRUT</span></p>
+                                </div>
+                                <div class="preview__item-info">
+                                    Un cadre industriel en bois ou en métal, sans passepartout et sans verre antireflet pour un rendu 100% mat. Le tirage est effectué de façon artisanale sur un papier fineart Hahnemühle 100% coton. J'adore, c'est moins cher, c'est beau, mais c'est fragile. À vos risques et périls.
+                                </div>
+                                <ul class="preview__item-sizes">
+                                    <li>120x80 cm <span>170$</span></li>
+                                    <li>90x60 cm <span>140$</span></li>
+                                    <li>60x40 cm <span>100$</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- ВЕЗДЕ НУЖЕН -->
     <script async src="js/libs/smooth.js"></script><!-- ТОЛЬКО -->
     <script async src="js/libs/glightbox.min.js"></script><!-- ТОЛЬКО для этой страницы -->
     <script src="js/form-send.js"></script><!-- НУЖЕН ТАМ ГДЕ ЕСТЬ ФОРМА ОБРАТНОЙ СВЯЗИ -->
     <script src="js/script.js"></script><!-- ВЕЗДЕ НУЖЕН -->
-    <!-- ТОЛЬКО для этой стрнаицы -->
-     <script>
-         window.addEventListener('load', function(){
-             // glightbox 
-            var lightboxGallery = GLightbox({
-                    loop: true,
-                    selector: ".glightbox",
-                    openEffect: "zoom",
-                    closeEffect: "zoom",
-                    closeOnOutsideClick: true,
-                    zoomable: true,
-            });
-         })
-     </script>
+    <script src="js/pages/gallery.js"></script>
 </body>
 </html>
 
